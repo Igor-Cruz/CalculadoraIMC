@@ -1,23 +1,12 @@
 // Selecionando pelos id
-const nome = document.getElementById('#nome')
-const altura = document.getElementById('#altura')
-const peso = document.getElementById('#peso')
-const calcular = document.getElementById('#calcular')
-const resultado = document.getElementById('#resultado')
+const nome = document.getElementById('nome')
+const altura = document.getElementById('altura')
+const peso = document.getElementById('peso')
+const calcular = document.getElementById('calcular')
+const resultado = document.getElementById('resultado')
 
-/*
-const nome = document.querySelector('#nome')
-const peso = document.querySelector('#peso')
-const altura = document.querySelector('#altura')
-*/
-
-// button calcular
-document.querySelector('#calcular')
-
-//resultado
-document.querySelector('#resultado')
-
-resultado = `Olá ${nome}, o seu IMC tem o resultado de ${imc}, a sua  é classificação  de ${classificacao} e grau ${grau}`
+//Evento de click
+calcular.addEventListener('click', imc)
 
 //Lógica  IMC
 function resultado() {
@@ -43,3 +32,18 @@ function resultado() {
   // return resultado()
   resultado.textContent = `Olá ${nome}, o seu IMC tem o resultado de ${imc}, a sua  é classificação  de ${classificacao} e grau ${grau}`
 }
+
+/*
+const nome = document.querySelector('#nome')
+const peso = document.querySelector('#peso')
+const altura = document.querySelector('#altura')
+
+
+// button calcular
+document.querySelector('#calcular')
+
+//resultado
+document.querySelector('#resultado')
+
+resultado = `Olá ${nome}, o seu IMC tem o resultado de ${imc}, a sua  é classificação  de ${classificacao} e grau ${grau}`
+*/
